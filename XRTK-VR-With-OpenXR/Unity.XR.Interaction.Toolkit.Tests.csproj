@@ -260,7 +260,7 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.4f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>C:/GIT/MasterClass/Term 2/Week 8/XRTK-VR-With-OpenXR/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>C:/GIT/MasterClass/Term 2/Week 8/DM-Production-Term2-VR/DM-Production-Term2-VR/XRTK-VR-With-OpenXR/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.4f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -614,22 +614,22 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.4f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>C:/GIT/MasterClass/Term 2/Week 8/XRTK-VR-With-OpenXR/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+      <HintPath>C:/GIT/MasterClass/Term 2/Week 8/DM-Production-Term2-VR/DM-Production-Term2-VR/XRTK-VR-With-OpenXR/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem">
-      <HintPath>C:/GIT/MasterClass/Term 2/Week 8/XRTK-VR-With-OpenXR/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
+      <HintPath>C:/GIT/MasterClass/Term 2/Week 8/DM-Production-Term2-VR/DM-Production-Term2-VR/XRTK-VR-With-OpenXR/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-      <HintPath>C:/GIT/MasterClass/Term 2/Week 8/XRTK-VR-With-OpenXR/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+      <HintPath>C:/GIT/MasterClass/Term 2/Week 8/DM-Production-Term2-VR/DM-Production-Term2-VR/XRTK-VR-With-OpenXR/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
-      <HintPath>C:/GIT/MasterClass/Term 2/Week 8/XRTK-VR-With-OpenXR/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+      <HintPath>C:/GIT/MasterClass/Term 2/Week 8/DM-Production-Term2-VR/DM-Production-Term2-VR/XRTK-VR-With-OpenXR/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/GIT/MasterClass/Term 2/Week 8/XRTK-VR-With-OpenXR/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/GIT/MasterClass/Term 2/Week 8/DM-Production-Term2-VR/DM-Production-Term2-VR/XRTK-VR-With-OpenXR/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/GIT/MasterClass/Term 2/Week 8/XRTK-VR-With-OpenXR/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/GIT/MasterClass/Term 2/Week 8/DM-Production-Term2-VR/DM-Production-Term2-VR/XRTK-VR-With-OpenXR/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

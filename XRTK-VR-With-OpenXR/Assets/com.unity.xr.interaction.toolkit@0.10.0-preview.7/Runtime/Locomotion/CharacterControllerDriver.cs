@@ -151,5 +151,16 @@
         {
             UpdateCharacterController();
         }
+
+        public bool m_alwaysUpdateController;
+        private void Update()
+        {
+            if (m_alwaysUpdateController)
+            {
+                UpdateCharacterController();
+                m_CharacterController.Move(Vector3.zero);
+            }
+            
+        }
     }
 }
