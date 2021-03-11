@@ -158,20 +158,63 @@ namespace UnityEngine.XR.Interaction.Toolkit
 #if UNITY_STANDALONE
             if (m_isSteamVR && m_deviceNode.IsHands())
             {
-                if (usage == CommonUsages.triggerButton)
+                if (usage == CommonUsages.menuButton)
                 {
-                   
+                    value = SteamVR_Actions._default.MenuButton[m_deviceNode.ToSteamVrSource()].state;
+                    return true;
+                }
+                else if (usage == CommonUsages.triggerButton)
+                {
                     value = SteamVR_Actions._default.TriggerPressed[m_deviceNode.ToSteamVrSource()].state;
- 
                     return true;
                 }
                 else if (usage == CommonUsages.gripButton)
                 {
                     value = SteamVR_Actions._default.GripPressed[m_deviceNode.ToSteamVrSource()].state;
- 
                     return true;
                 }
-                
+                else if (usage == CommonUsages.primaryButton)
+                {
+                    value = SteamVR_Actions._default.PrimaryButton[m_deviceNode.ToSteamVrSource()].state;
+                    return true;
+                }
+                else if (usage == CommonUsages.primaryTouch)
+                {
+                    value = SteamVR_Actions._default.PrimaryTouch[m_deviceNode.ToSteamVrSource()].state;
+                    return true;
+                }
+                else if (usage == CommonUsages.secondaryButton)
+                {
+                    value = SteamVR_Actions._default.SecondaryButton[m_deviceNode.ToSteamVrSource()].state;
+                    return true;
+                }
+                else if (usage == CommonUsages.secondaryTouch)
+                {
+                    value = SteamVR_Actions._default.SecondaryTouch[m_deviceNode.ToSteamVrSource()].state;
+                    return true;
+                }
+                else if (usage == CommonUsages.primary2DAxisTouch)
+                {
+                    value = SteamVR_Actions._default.Primary2DAxisTouch[m_deviceNode.ToSteamVrSource()].state;
+                    return true;
+                }
+                else if (usage == CommonUsages.primary2DAxisClick)
+                {
+                    value = SteamVR_Actions._default.Primary2DAxisClick[m_deviceNode.ToSteamVrSource()].state;
+                    return true;
+                }
+                else if (usage == CommonUsages.secondary2DAxisTouch)
+                {
+                    value = SteamVR_Actions._default.Secondary2DAxisTouch[m_deviceNode.ToSteamVrSource()].state;
+                    return true;
+                }
+                else if (usage == CommonUsages.secondary2DAxisClick)
+                {
+                    value = SteamVR_Actions._default.Secondary2DAxisClick[m_deviceNode.ToSteamVrSource()].state;
+                    return true;
+                }
+
+
             }
 #endif
             return m_inputDevice.TryGetFeatureValue(usage, out value);
@@ -189,7 +232,7 @@ namespace UnityEngine.XR.Interaction.Toolkit
             {
                 if (usage == CommonUsages.trigger)
                 {
-                    value = SteamVR_Actions._default.Trigger[m_deviceNode.ToSteamVrSource()].axis;      //[m_deviceNode.ToSteamVrSource()].state ? 1 : 0;
+                    value = SteamVR_Actions._default.Trigger[m_deviceNode.ToSteamVrSource()].axis;
 
 
                     return true;
@@ -212,14 +255,14 @@ namespace UnityEngine.XR.Interaction.Toolkit
             {
                 if (usage == CommonUsages.primary2DAxis)
                 {
-                    value = SteamVR_Actions._default.Primary2DAxis[m_deviceNode.ToSteamVrSource()].axis;/*
-                    value = new Vector2(SteamVR_Actions._default.SnapTurnLeft[m_deviceNode.ToSteamVrSource()].state ? - 1 :
-                                            (SteamVR_Actions._default.SnapTurnRight[m_deviceNode.ToSteamVrSource()].state ? 1 : 0),
-                                            SteamVR_Actions._default.Teleport[m_deviceNode.ToSteamVrSource()].state ? 1 : 0);
-                    */
- 
+                    value = SteamVR_Actions._default.Primary2DAxis[m_deviceNode.ToSteamVrSource()].axis;
                     return true;
                 }              
+                else if (usage == CommonUsages.secondary2DAxis)
+                {
+                    value = SteamVR_Actions._default.Secondary2DAxis[m_deviceNode.ToSteamVrSource()].axis;
+                    return true;
+                }
             }
 #endif
             return m_inputDevice.TryGetFeatureValue(usage, out value);
