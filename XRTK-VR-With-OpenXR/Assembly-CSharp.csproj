@@ -64,6 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AppendInputField.cs" />
     <Compile Include="Assets\Scripts\DisplayGizmo.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -661,10 +662,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="SteamVR_Actions.csproj">
-      <Project>{654AB270-A045-33AD-51AE-B9F8576A4447}</Project>
-      <Name>SteamVR_Actions</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.csproj">
       <Project>{EA905644-E36C-0F3E-70C6-99AE29F60431}</Project>
       <Name>Unity.XR.Interaction.Toolkit</Name>
@@ -672,6 +669,10 @@
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Editor.csproj">
       <Project>{885B58B0-A7D4-F66A-423E-4F751ABD8876}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Actions.csproj">
+      <Project>{654AB270-A045-33AD-51AE-B9F8576A4447}</Project>
+      <Name>SteamVR_Actions</Name>
     </ProjectReference>
     <ProjectReference Include="SteamVR_Input_Editor.csproj">
       <Project>{8E6AF4D1-5326-BCCD-0A2B-A70125F6A508}</Project>

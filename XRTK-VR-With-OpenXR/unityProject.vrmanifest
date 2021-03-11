@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.xrtkvrwithopenxr.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\GIT\\MasterClass\\Term 2\\Week 8\\DM-Production-Term2-VR\\DM-Production-Term2-VR\\XRTK-VR-With-OpenXR\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "XRTK-VR-With-OpenXR [Testing]"
+        }
+      }
+    }
+  ]
+}

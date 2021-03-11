@@ -160,16 +160,18 @@ namespace UnityEngine.XR.Interaction.Toolkit
             {
                 if (usage == CommonUsages.triggerButton)
                 {
-                    value = SteamVR_Actions._default.GrabPinch[m_deviceNode.ToSteamVrSource()].state;
+                   
+                    value = SteamVR_Actions._default.TriggerPressed[m_deviceNode.ToSteamVrSource()].state;
  
                     return true;
                 }
                 else if (usage == CommonUsages.gripButton)
                 {
-                    value = SteamVR_Actions._default.GrabGrip[m_deviceNode.ToSteamVrSource()].state;
+                    value = SteamVR_Actions._default.GripPressed[m_deviceNode.ToSteamVrSource()].state;
  
                     return true;
                 }
+                
             }
 #endif
             return m_inputDevice.TryGetFeatureValue(usage, out value);
@@ -187,13 +189,14 @@ namespace UnityEngine.XR.Interaction.Toolkit
             {
                 if (usage == CommonUsages.trigger)
                 {
-                    value = SteamVR_Actions._default.GrabPinch[m_deviceNode.ToSteamVrSource()].state ? 1 : 0;
- 
+                    value = SteamVR_Actions._default.Trigger[m_deviceNode.ToSteamVrSource()].axis;      //[m_deviceNode.ToSteamVrSource()].state ? 1 : 0;
+
+
                     return true;
                 }
                 else if (usage == CommonUsages.grip)
                 {
-                    value = SteamVR_Actions._default.Squeeze[m_deviceNode.ToSteamVrSource()].axis;
+                    value = SteamVR_Actions._default.Grip[m_deviceNode.ToSteamVrSource()].axis;
  
                     return true;
                 }
@@ -209,9 +212,11 @@ namespace UnityEngine.XR.Interaction.Toolkit
             {
                 if (usage == CommonUsages.primary2DAxis)
                 {
+                    value = SteamVR_Actions._default.Primary2DAxis[m_deviceNode.ToSteamVrSource()].axis;/*
                     value = new Vector2(SteamVR_Actions._default.SnapTurnLeft[m_deviceNode.ToSteamVrSource()].state ? - 1 :
                                             (SteamVR_Actions._default.SnapTurnRight[m_deviceNode.ToSteamVrSource()].state ? 1 : 0),
                                             SteamVR_Actions._default.Teleport[m_deviceNode.ToSteamVrSource()].state ? 1 : 0);
+                    */
  
                     return true;
                 }              
