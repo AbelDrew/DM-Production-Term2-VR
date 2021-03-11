@@ -165,12 +165,12 @@ namespace UnityEngine.XR.Interaction.Toolkit
                 }
                 else if (usage == CommonUsages.triggerButton)
                 {
-                    value = SteamVR_Actions._default.TriggerPressed[m_deviceNode.ToSteamVrSource()].state;
+                    value = SteamVR_Actions._default.TriggerButton[m_deviceNode.ToSteamVrSource()].state;
                     return true;
                 }
                 else if (usage == CommonUsages.gripButton)
                 {
-                    value = SteamVR_Actions._default.GripPressed[m_deviceNode.ToSteamVrSource()].state;
+                    value = SteamVR_Actions._default.GripButton[m_deviceNode.ToSteamVrSource()].state;
                     return true;
                 }
                 else if (usage == CommonUsages.primaryButton)
@@ -257,7 +257,8 @@ namespace UnityEngine.XR.Interaction.Toolkit
                 {
                     value = SteamVR_Actions._default.Primary2DAxis[m_deviceNode.ToSteamVrSource()].axis;
                     return true;
-                }              
+                } 
+                // BUGFIX - "else if" aproach means only the latest input will be read, e.g if the secondary axis has an input being read, the primary axis will stop responding
                 else if (usage == CommonUsages.secondary2DAxis)
                 {
                     value = SteamVR_Actions._default.Secondary2DAxis[m_deviceNode.ToSteamVrSource()].axis;

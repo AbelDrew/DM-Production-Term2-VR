@@ -16,12 +16,12 @@
       "requirement": "suggested"
     },
     {
-      "name": "/actions/default/in/TriggerPressed",
+      "name": "/actions/default/in/TriggerButton",
       "type": "boolean",
       "requirement": "suggested"
     },
     {
-      "name": "/actions/default/in/GripPressed",
+      "name": "/actions/default/in/GripButton",
       "type": "boolean",
       "requirement": "suggested"
     },

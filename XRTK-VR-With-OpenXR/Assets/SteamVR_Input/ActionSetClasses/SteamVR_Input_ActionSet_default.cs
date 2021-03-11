@@ -41,19 +41,19 @@ namespace Valve.VR
             }
         }
         
-        public virtual SteamVR_Action_Boolean TriggerPressed
+        public virtual SteamVR_Action_Boolean TriggerButton
         {
             get
             {
-                return SteamVR_Actions.default_TriggerPressed;
+                return SteamVR_Actions.default_TriggerButton;
             }
         }
         
-        public virtual SteamVR_Action_Boolean GripPressed
+        public virtual SteamVR_Action_Boolean GripButton
         {
             get
             {
-                return SteamVR_Actions.default_GripPressed;
+                return SteamVR_Actions.default_GripButton;
             }
         }
         

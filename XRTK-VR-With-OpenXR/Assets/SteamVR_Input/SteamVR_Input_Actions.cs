@@ -23,9 +23,9 @@ namespace Valve.VR
         
         private static SteamVR_Action_Single p_default_Grip;
         
-        private static SteamVR_Action_Boolean p_default_TriggerPressed;
+        private static SteamVR_Action_Boolean p_default_TriggerButton;
         
-        private static SteamVR_Action_Boolean p_default_GripPressed;
+        private static SteamVR_Action_Boolean p_default_GripButton;
         
         private static SteamVR_Action_Boolean p_default_PrimaryButton;
         
@@ -75,19 +75,19 @@ namespace Valve.VR
             }
         }
         
-        public static SteamVR_Action_Boolean default_TriggerPressed
+        public static SteamVR_Action_Boolean default_TriggerButton
         {
             get
             {
-                return SteamVR_Actions.p_default_TriggerPressed.GetCopy<SteamVR_Action_Boolean>();
+                return SteamVR_Actions.p_default_TriggerButton.GetCopy<SteamVR_Action_Boolean>();
             }
         }
         
-        public static SteamVR_Action_Boolean default_GripPressed
+        public static SteamVR_Action_Boolean default_GripButton
         {
             get
             {
-                return SteamVR_Actions.p_default_GripPressed.GetCopy<SteamVR_Action_Boolean>();
+                return SteamVR_Actions.p_default_GripButton.GetCopy<SteamVR_Action_Boolean>();
             }
         }
         
@@ -193,8 +193,8 @@ namespace Valve.VR
                     SteamVR_Actions.default_MenuButton,
                     SteamVR_Actions.default_Trigger,
                     SteamVR_Actions.default_Grip,
-                    SteamVR_Actions.default_TriggerPressed,
-                    SteamVR_Actions.default_GripPressed,
+                    SteamVR_Actions.default_TriggerButton,
+                    SteamVR_Actions.default_GripButton,
                     SteamVR_Actions.default_PrimaryButton,
                     SteamVR_Actions.default_SecondaryButton,
                     SteamVR_Actions.default_PrimaryTouch,
@@ -211,8 +211,8 @@ namespace Valve.VR
                     SteamVR_Actions.default_MenuButton,
                     SteamVR_Actions.default_Trigger,
                     SteamVR_Actions.default_Grip,
-                    SteamVR_Actions.default_TriggerPressed,
-                    SteamVR_Actions.default_GripPressed,
+                    SteamVR_Actions.default_TriggerButton,
+                    SteamVR_Actions.default_GripButton,
                     SteamVR_Actions.default_PrimaryButton,
                     SteamVR_Actions.default_SecondaryButton,
                     SteamVR_Actions.default_PrimaryTouch,
@@ -232,8 +232,8 @@ namespace Valve.VR
                     SteamVR_Actions.default_Pose};
             Valve.VR.SteamVR_Input.actionsBoolean = new Valve.VR.SteamVR_Action_Boolean[] {
                     SteamVR_Actions.default_MenuButton,
-                    SteamVR_Actions.default_TriggerPressed,
-                    SteamVR_Actions.default_GripPressed,
+                    SteamVR_Actions.default_TriggerButton,
+                    SteamVR_Actions.default_GripButton,
                     SteamVR_Actions.default_PrimaryButton,
                     SteamVR_Actions.default_SecondaryButton,
                     SteamVR_Actions.default_PrimaryTouch,
@@ -254,8 +254,8 @@ namespace Valve.VR
                     SteamVR_Actions.default_MenuButton,
                     SteamVR_Actions.default_Trigger,
                     SteamVR_Actions.default_Grip,
-                    SteamVR_Actions.default_TriggerPressed,
-                    SteamVR_Actions.default_GripPressed,
+                    SteamVR_Actions.default_TriggerButton,
+                    SteamVR_Actions.default_GripButton,
                     SteamVR_Actions.default_PrimaryButton,
                     SteamVR_Actions.default_SecondaryButton,
                     SteamVR_Actions.default_PrimaryTouch,
@@ -273,8 +273,8 @@ namespace Valve.VR
             SteamVR_Actions.p_default_MenuButton = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/MenuButton")));
             SteamVR_Actions.p_default_Trigger = ((SteamVR_Action_Single)(SteamVR_Action.Create<SteamVR_Action_Single>("/actions/default/in/Trigger")));
             SteamVR_Actions.p_default_Grip = ((SteamVR_Action_Single)(SteamVR_Action.Create<SteamVR_Action_Single>("/actions/default/in/Grip")));
-            SteamVR_Actions.p_default_TriggerPressed = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/TriggerPressed")));
-            SteamVR_Actions.p_default_GripPressed = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/GripPressed")));
+            SteamVR_Actions.p_default_TriggerButton = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/TriggerButton")));
+            SteamVR_Actions.p_default_GripButton = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/GripButton")));
             SteamVR_Actions.p_default_PrimaryButton = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/PrimaryButton")));
             SteamVR_Actions.p_default_SecondaryButton = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/SecondaryButton")));
             SteamVR_Actions.p_default_PrimaryTouch = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/PrimaryTouch")));
